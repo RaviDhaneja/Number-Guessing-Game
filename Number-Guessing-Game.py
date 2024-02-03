@@ -10,12 +10,3 @@ while YourNumber != RandomNumber:
         print("Too high !")
     elif(YourNumber == RandomNumber):
         print("You Guessed it !")
-        
-        
-        
-        
-        
-        
-        
-        
-        
