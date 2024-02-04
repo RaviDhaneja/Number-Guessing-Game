@@ -1,23 +1,22 @@
 import random
 
-user_input=input("Enter a Choice(rock,paper,scissors) :")
-user_text = user_input.lower()
-possible=["rock","paper","scissors"]
+user = input("Enter a Choice(rock,paper,scissors) :").lower()
+possible = ["rock", "paper", "scissors"]
 computer_choice = random.choice(possible)
-print("your choice: "+ user_text + " computer choice: "+computer_choice)
-if user_text == computer_choice or user_text == computer_choice:
-    print("Both players selected"+user_text+"It's a tie!")
-elif user_text == "rock":
+print("your choice: " + user + " computer choice: " + computer_choice)
+if user == computer_choice or user == computer_choice:
+    print("Both players selected" + user + "It's a tie!")
+elif user == "rock":
     if computer_choice == "scissors":
         print("Rock smashes scissors! You win!")
     else:
         print("Paper covers rock! You lose.")
-elif user_text == "paper":
+elif user == "paper":
     if computer_choice == "rock":
         print("Paper covers rock! You win!")
     else:
         print("Scissors cuts paper! You lose.")
-elif user_text == "scissors":
+elif user == "scissors":
     if computer_choice == "paper":
         print("Scissors cuts paper! You win!")
     else:
